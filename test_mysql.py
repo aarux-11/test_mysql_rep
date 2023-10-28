@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # database connection
-mydb = mysql.connector.connect(host="localhost", user="root", password="pass11", database= "youtube_db", auth_plugin='mysql_native_password')
+mydb = mysql.connector.connect(host="192.168.56.1", user="root", password="pass11", database= "youtube_db", auth_plugin='mysql_native_password')
 mycursor = mydb.cursor(buffered=True)
 
 st.write("Here's our first attempt at using data to create a table:")
