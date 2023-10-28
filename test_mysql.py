@@ -29,7 +29,7 @@ mycursor = mydb.cursor()
 
 if st.button("Upload to SQL"):
     with st.spinner('Please Wait for it...'):
-        cursor.execute(ArtistTableSql)
+        mycursor.execute(ArtistTableSql)
         st.success("Upload to MogoDB successful !!")
 
 # some other statements  with the help of cursor
