@@ -14,17 +14,17 @@ NAME  CHAR(20) NOT NULL,
 TRACK CHAR(10))"""
 
 #db connection
-try:
-    mydb = mysql.connect(user='root', password='', host='localhost', port = 3306, db= 'youtube_db', auth_plugin='mysql_native_password')
-    mycursor = mydb.cursor()
+# try:
+mydb = mysql.connect(user='root', password='', host='localhost', port = 3306, db= 'youtube_db', auth_plugin='mysql_native_password')
+mycursor = mydb.cursor()
 
-except Error as error:
-    print("errrrrrrrrror".format(error))
-except Exception as e:
-    print(e)
-finally:
-    if mydb.is_connected():
-        print("yess")
+# except Error as error:
+#     print("errrrrrrrrror".format(error))
+# except Exception as e:
+#     print(e)
+# finally:
+#     if mydb.is_connected():
+#         print("yess")
 
 
 if st.button("Upload to SQL"):
