@@ -35,7 +35,7 @@ finally:
 if st.button("Upload to SQL"):
     with st.spinner('Please Wait for it...'):
         mycursor.execute(ArtistTableSql)
-        st.success("Upload to MogoDB successful !!")
+        st.success("Upload to MySQL successful !!")
 
 # some other statements  with the help of cursor
 mydb.close()
