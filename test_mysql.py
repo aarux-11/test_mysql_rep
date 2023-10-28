@@ -1,5 +1,5 @@
 import streamlit as st
-import mysql.connector
+import mysql.connector as mysql
 import pandas as pd
 
 st.write("Here's our first attempt at using data to create a table:")
@@ -13,7 +13,7 @@ NAME  CHAR(20) NOT NULL,
 TRACK CHAR(10))"""
 
 # database connection
-mydb = mysql.connector.connect(user='root', password='pass11', host='127.0.0.1', port = 3306, database= 'youtube_db', auth_plugin='mysql_native_password')
+mydb = mysql.connect(user='root', password='pass11', host='127.0.0.1', port = 3306, database= 'youtube_db', auth_plugin='mysql_native_password')
 mycursor = mydb.cursor(buffered=True)
 
 if st.button("Upload to SQL"):
