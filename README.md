@@ -1,2 +1,2 @@
 # test_mysql_rep
-Test repository.
+Test mysql connection repository.
