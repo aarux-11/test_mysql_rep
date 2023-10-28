@@ -23,7 +23,7 @@ except Error as error:
 except Exception as e:
     print(e)
 finally:
-if mydb.is connected():
+    if mydb.is connected():
     print("yess")
 
 
