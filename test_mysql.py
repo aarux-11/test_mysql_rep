@@ -24,7 +24,7 @@ except Exception as e:
     print(e)
 finally:
     if mydb.is_connected():
-    print("yess")
+        print("yess")
 
 
 if st.button("Upload to SQL"):
