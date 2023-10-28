@@ -15,7 +15,7 @@ TRACK CHAR(10))"""
 
 #db connection
 # try:
-mydb = mysql.connect(user='root', password='', host='localhost', port = 3306, db= 'youtube_db', auth_plugin='mysql_native_password')
+mydb = mysql.connect(user='root', password='pass11', host='localhost', port = 3306, db= 'youtube_db', auth_plugin='mysql_native_password')
 mycursor = mydb.cursor()
 
 # except Error as error:
