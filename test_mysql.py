@@ -13,7 +13,7 @@ NAME  CHAR(20) NOT NULL,
 TRACK CHAR(10))"""
 
 # database connection
-mydb = mysql.connector.connect(user="testroot", password="", host="testlocalhost", port = 3306, database= "youtube_db", auth_plugin='mysql_native_password')
+mydb = mysql.connector.connect(user="testroot", password="", host="testhost", port = 3306, database= "youtube_db", auth_plugin='mysql_native_password')
 mycursor = mydb.cursor(buffered=True)
 
 if st.button("Upload to SQL"):
